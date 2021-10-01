@@ -10,7 +10,7 @@ this.pay = function () {
     var accountId = $('#email-fld').val();
 
     widget.charge({ // options
-            publicId: 'tpk_bc1607517b817e2be8555d2a5d229',  //id из личного кабинета
+            publicId: 'pk_bc1607517b817e2be8555d2a5d229',  //id из личного кабинета
             description: 'Помощь фонду \'Дети в лете\'', //назначение
             amount: amount, //сумма
             currency: 'RUB', //валюта
