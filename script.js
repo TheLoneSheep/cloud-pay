@@ -9,7 +9,8 @@ this.pay = function () {
     var amount = parseFloat($('#sum-fld').val());
     var accountId = $('#email-fld').val();
 
-    widget.charge({ // options
+    widget.pay('charge',
+	{ // options
             publicId: 'pk_bc1607517b817e2be8555d2a5d229',  //id из личного кабинета
             description: 'Помощь фонду \'Дети в лете\'', //назначение
             amount: amount, //сумма
