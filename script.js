@@ -11,7 +11,8 @@ this.pay = function () {
 
     widget.pay('charge',
 	{ // options
-            publicId: 'pk_bc1607517b817e2be8555d2a5d229',  //id из личного кабинета
+            //publicId: 'pk_bc1607517b817e2be8555d2a5d229',  //id из личного кабинета
+            publicId: 'test_api_00000000000000000000001',
             description: 'Помощь фонду \'Дети в лете\'', //назначение
             amount: amount, //сумма
             currency: 'RUB', //валюта
@@ -19,11 +20,14 @@ this.pay = function () {
             email: accountId,
             data: data
         },
-        function (options) { // success
+        {
+	    onSuccess: function (options) { // success
             //действие при успешной оплате
-        },
-        function (reason, options) { // fail
+            },
+	    onFail: function (reason, options) { // fail
             //действие при неуспешной оплате
-        });
+            }
+	}
+    );
 }; 
 $('#checkout-btn').click(pay);   
