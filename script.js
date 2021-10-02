@@ -60,8 +60,8 @@ this.paySample = function () {
 //  {$description:'Оплата на Тестовый 21'}
 
     widget.charge({ // options
-            'publicId': (currency == 'RUB') ? 'pk_bc1607517b817e2be8555d2a5d229' : 'pk_a89d43ece867a72c69b976c4f2451', //id из личного кабинета 
-            'description': (currency == 'RUB') ? 'Пожертвование в фонд помогите программисту' : 'Оплата на Тестовый 21',
+            'publicId': (currency == 'RUB') ? 'test_api_00000000000000000000001' : 'pk_a89d43ece867a72c69b976c4f2451', //id из личного кабинета
+            'description': (currency == 'RUB') ? 'Пожертвование в фонд \'Помоги голодным кодерам\'' : 'Оплата на Тестовый 21',
             'amount': parseFloat($('#sum-fld').val()), //сумма
             'currency': currency, //валюта
             'invoiceId': number_cloud,
