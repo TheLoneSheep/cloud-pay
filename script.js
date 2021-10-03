@@ -75,7 +75,7 @@ this.paySample = function () {
            // console.log("success");
         },
         function () { // fail
-            $('.checkout-result').text('Оплата не удалась'); //действие при неуспешной оплате
+            //$('.checkout-result').text('Оплата не удалась'); //действие при неуспешной оплате
             
         });
     $('.btn btn-def').hide();
