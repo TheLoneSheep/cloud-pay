@@ -72,7 +72,7 @@ this.paySample = function () {
         },
         function() { //success
             //$('.checkout-result').text('Оплата успешно завершена');
-            number_cloud++;
+           // console.log("success");
         },
         function () { // fail
             $('.checkout-result').text('Оплата не удалась'); //действие при неуспешной оплате
